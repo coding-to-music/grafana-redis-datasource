@@ -188,6 +188,44 @@ yum install go
 go get -u github.com/grafana/grafana-plugin-sdk-go
 ```
 
+Output
+
+```
+go: downloading github.com/cespare/xxhash/v2 v2.2.0
+go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.4
+go: downloading github.com/apache/arrow/go/arrow v0.0.0-20211112161151-bc219186db40
+go: downloading github.com/google/go-cmp v0.5.9
+go: downloading github.com/prometheus/client_golang v1.14.0
+go: downloading github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
+go: downloading github.com/prometheus/client_model v0.3.0
+go: downloading github.com/prometheus/common v0.40.0
+go: downloading github.com/prometheus/procfs v0.8.0
+go: downloading github.com/stretchr/objx v0.5.0
+go: downloading github.com/stretchr/testify v1.8.2
+go: downloading golang.org/x/net v0.8.0
+go: downloading golang.org/x/sys v0.6.0
+go: downloading golang.org/x/text v0.8.0
+go: downloading golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2
+go: downloading google.golang.org/genproto v0.0.0-20230110181048-76db0878b65f
+go: downloading google.golang.org/grpc v1.54.0
+go: downloading google.golang.org/protobuf v1.28.1
+go: downloading gopkg.in/yaml.v3 v3.0.1
+go get: upgraded github.com/apache/arrow/go/arrow v0.0.0-20211104181228-706a1d1e1879 => v0.0.0-20211112161151-bc219186db40
+go get: upgraded github.com/cespare/xxhash/v2 v2.1.2 => v2.2.0
+go get: upgraded github.com/grafana/grafana-plugin-sdk-go v0.114.0 => v0.157.0
+go get: upgraded github.com/magefile/mage v1.11.0 => v1.14.0
+go get: upgraded github.com/prometheus/common v0.32.1 => v0.40.0
+go get: upgraded github.com/prometheus/procfs v0.7.3 => v0.8.0
+go get: upgraded github.com/stretchr/objx v0.3.0 => v0.5.0
+go get: upgraded github.com/stretchr/testify v1.7.0 => v1.8.2
+go get: upgraded golang.org/x/net v0.0.0-20211104170005-ce137452f963 => v0.8.0
+go get: upgraded golang.org/x/sys v0.0.0-20211103235746-7861aae1554b => v0.6.0
+go get: upgraded golang.org/x/text v0.3.7 => v0.8.0
+go get: upgraded google.golang.org/genproto v0.0.0-20211102202547-e9cf271f7f2c => v0.0.0-20230110181048-76db0878b65f
+go get: upgraded google.golang.org/grpc v1.42.0 => v1.54.0
+go get: upgraded gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b => v3.0.1
+```
+
 - Install Mage (make-like build tool using Go)
 
 ```
