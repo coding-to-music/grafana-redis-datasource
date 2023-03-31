@@ -1,5 +1,7 @@
 .env
 mage/
+data/
+data/dump.rdb
 
 # Logs
 logs
