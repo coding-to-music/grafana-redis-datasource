@@ -174,6 +174,77 @@ Build frontend components
 yarn build
 ```
 
+Output
+
+```
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+ PASS  src/time-series/time-series.test.ts
+ PASS  src/module.test.ts (5.364 s)
+ PASS  src/components/ConfigEditor/ConfigEditor.test.tsx (5.661 s)
+ PASS  src/components/QueryEditor/QueryEditor.test.tsx (5.829 s)
+ PASS  src/datasource/datasource.test.ts (8.338 s)
+-----------------------------|---------|----------|---------|---------|-------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------------|---------|----------|---------|---------|-------------------
+All files                    |     100 |    98.15 |     100 |     100 |                   
+ src                         |     100 |      100 |     100 |     100 |                   
+  constants.ts               |     100 |      100 |     100 |     100 |                   
+  module.ts                  |     100 |      100 |     100 |     100 |                   
+ src/components              |     100 |      100 |     100 |     100 |                   
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+ src/components/ConfigEditor |     100 |    97.95 |     100 |     100 |                   
+  ConfigEditor.tsx           |     100 |    97.95 |     100 |     100 | 194               
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+ src/components/QueryEditor  |     100 |    98.05 |     100 |     100 |                   
+  QueryEditor.tsx            |     100 |    98.05 |     100 |     100 | 290-291           
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+ src/datasource              |     100 |    96.15 |     100 |     100 |                   
+  datasource.ts              |     100 |    96.15 |     100 |     100 | 28                
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+ src/redis                   |     100 |      100 |     100 |     100 |                   
+  command.ts                 |     100 |      100 |     100 |     100 |                   
+  gears.ts                   |     100 |      100 |     100 |     100 |                   
+  graph.ts                   |     100 |      100 |     100 |     100 |                   
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+  info.ts                    |     100 |      100 |     100 |     100 |                   
+  json.ts                    |     100 |      100 |     100 |     100 |                   
+  query.ts                   |     100 |      100 |     100 |     100 |                   
+  redis.ts                   |     100 |      100 |     100 |     100 |                   
+  search.ts                  |     100 |      100 |     100 |     100 |                   
+  time-series.ts             |     100 |      100 |     100 |     100 |                   
+ src/time-series             |     100 |      100 |     100 |     100 |                   
+  index.ts                   |     100 |      100 |     100 |     100 |                   
+  time-series.ts             |     100 |      100 |     100 |     100 |                   
+-----------------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 5 passed, 5 total
+Tests:       210 passed, 210 total
+Snapshots:   0 total
+Time:        11.697 s
+Ran all test suites with tests matching "".
+✔ Running tests
+⠋ Compiling...  Browserslist: caniuse-lite is outdated. Please run:
+    npx browserslist@latest --update-db
+    Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+✖ EACCES: permission denied, open '/home/tmc/ap/vol6/grafana-redis-datasource/dist/module.js'
+  Trace: [Error: EACCES: permission denied, open '/home/tmc/ap/vol6/grafana-redis-datasource/dist/module.js'] {
+    errno: -13,
+    code: 'EACCES',
+    syscall: 'open',
+    path: '/home/tmc/ap/vol6/grafana-redis-datasource/dist/module.js'
+  }
+      at /home/tmc/ap/vol6/grafana-redis-datasource/node_modules/@grafana/toolkit/src/cli/utils/useSpinner.js:31:33
+      at step (/home/tmc/ap/vol6/grafana-redis-datasource/node_modules/tslib/tslib.js:143:27)
+      at Object.throw (/home/tmc/ap/vol6/grafana-redis-datasource/node_modules/tslib/tslib.js:124:57)
+      at rejected (/home/tmc/ap/vol6/grafana-redis-datasource/node_modules/tslib/tslib.js:115:69)
+      at runMicrotasks (<anonymous>)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
 ## Backend¶
 
 - Install Golang for your platform
