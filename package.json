@@ -18,6 +18,8 @@
   "license": "Apache-2.0",
   "name": "redis-datasource",
   "scripts": {
+    "deploy": "git add . && git commit -m Build && git push",
+    "clean": "bash ./purge-all.sh",
     "build": "grafana-toolkit plugin:build --coverage",
     "build:backend": "mage -v lint && mage cover && mage -v",
     "dev": "grafana-toolkit plugin:dev",

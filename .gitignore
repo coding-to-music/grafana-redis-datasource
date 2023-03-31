@@ -1,3 +1,6 @@
+.env
+mage/
+
 # Logs
 logs
 *.log
