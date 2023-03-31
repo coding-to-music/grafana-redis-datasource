@@ -240,6 +240,16 @@ go run bootstrap.go
 yarn build:backend
 ```
 
+Output
+
+```
+yarn run v1.22.19
+$ mage -v lint && mage cover && mage -v
+/bin/sh: 1: mage: Permission denied
+error Command failed with exit code 127.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
+
 ## Start Grafana¶
 
 Docker Compose
